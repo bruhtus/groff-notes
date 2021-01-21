@@ -32,6 +32,7 @@ So if you clone the git bare instead of the full git repository, you can get all
 You might ask "if you didn't download all your file then how you called that a backup?". Ok so here's the thing, by cloning a git bare you backup all your commit history and if you decide to upload your git repository to another git services or even your own server, you just need to push those git bare backup and git gonna create all your file with all the commit history on the new git repository. So basically you have your git repository backup without taking too much space on your local storage.
 .PP
 So, how can you backup using git bare clone? git have a backup mechanism but it's not obvious, git has a `--mirror` flag that you can use to backup or push a git bare repository.
+.bp
 .PP
 First, you need to clone a git bare from git repository by doing
 .IP
@@ -42,7 +43,7 @@ or
 .IP
 .CW
 git clone --mirror <git-repo-url.git>
-.PP
+.LP
 Both of the commands are basically the same, you can push using `--mirror` flag or add git remote repository and then push using the usual command. How to push with git bare repository is later in this post.
 .PP
 Here's an example, if i want to clone my `instasaver` git bare then the command i need is
@@ -104,6 +105,7 @@ and then if i want to push the changes to master branch, i just need to do
 git push gitlab master
 .LP
 other git workflow such as `git add` and `git commit` is the same. Don't forget to change directory (`cd`) into your local git repo directory.
+.bp
 .NH 3
 .XN "Push Git Bare"
 .PP
