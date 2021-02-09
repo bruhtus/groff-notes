@@ -5,7 +5,7 @@ Robertus Diawan Chris
 .TS
 center tab(;);
 ll.
-.;Any one character
+\.;Any one character
 *;Match any number of previous character (including zero number of previous character)
 +;Match any number of previous character
 $;End of the line
